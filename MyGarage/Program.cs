@@ -5,7 +5,7 @@ using YourGarage.Vehicles.Cars;
 using YourGarage.Vehicles.Watercraft;
 
 namespace YourGarage
-{
+{// setting up project for interface refactor and regression testing
     class Program
     {
         static void Main(string[] args)
