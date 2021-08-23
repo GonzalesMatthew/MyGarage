@@ -6,8 +6,19 @@ using System.Threading.Tasks;
 
 namespace YourGarage
 {
-    abstract class AircraftBase : Vehicle
+    abstract class AircraftBase : IVehicle, IAircraftBase
     {
+        public int Capacity { get; set; }
+        public string CapacityUnits { get; set; }
+        public string Color { get; set; }
+        public string PaxOccupancy { get; set; }
+        public string PowerType { get; set; }
+
+        public void Brake() { }
+
+        public void Drive() { }
+        public void Refuel() { }
+
         public virtual void Fly()
         {
             Console.WriteLine("You fly 100 km.");
@@ -16,5 +27,7 @@ namespace YourGarage
         {
             Console.WriteLine("You land, but realize your brakes are fading.");
         }
+
+
     }
 }

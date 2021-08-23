@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace YourGarage.Vehicles.Aircraft
 {
-    class JetFighter : AircraftBase
+    class JetFighter : IAircraftBase
     {
         public void Jettison()
         {
